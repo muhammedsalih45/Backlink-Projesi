@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backlink Projesi</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+</head>
+
+<body>
+
+    <h1 id="show-modal">Backlink Ekle</h1>
+
+    <div class="container" id="backlinks-container"></div>
+
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Backlink Ekle</h3>
+                <i class="fas fa-times close-icon" id="close-modal"></i>
+            </div>
+            <div class="modal-content">
+                <form id="backlink-form">
+                    <div class="form-group">
+                        <label class="form-label">Website adı</label>
+                        <input class="form-input" type="text" id="website-name">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Website Adresi</label>
+                        <input class="form-input" type="text" id="website-url">
+                    </div>
+                    <button type="submit">Kaydet</button>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

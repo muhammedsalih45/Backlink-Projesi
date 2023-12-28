@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gray;
+}
+
+h1 {
+  text-align: center;
+  background-color: black;
+  color: white;
+  width: 300px;
+  margin: 20px auto;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+}
+
+.show-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  background: #673aaa;
+  color: white;
+  align-items: center;
+  padding: 15px;
+}
+.modal {
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  width: 500px;
+  animation: modalopen 1s;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.close-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+.form-group {
+  height: 50px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 5px;
+  border: 2px solid #673aaa;
+  border-radius: 10px;
+  outline: none;
+}
+
+.form-label {
+  color: #673aaa;
+}
+
+button {
+  background: #673aaa;
+  color: white;
+  height: 30px;
+  width: 100px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: right;
+  margin: 10px;
+}
+
+a {
+  color: white;
+  font-size: bold;
+  font-size: 20px;
+  text-decoration: none;
+  margin: auto;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.fa-times {
+  cursor: pointer;
+}
